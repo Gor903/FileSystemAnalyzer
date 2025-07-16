@@ -31,8 +31,16 @@ pip install .
 ## 🔧 Usage
 
 ```bash
+python -m venv venv
+source venv/bin/activate && pip install --upgrade pip
+pip install .
 fs-analyzer -h
 fs-analyzer [DIRECTORY] [OPTIONS]
+```
+
+To run tests
+```bash
+pytest tests/test_scanner.py
 ```
 
 ---
